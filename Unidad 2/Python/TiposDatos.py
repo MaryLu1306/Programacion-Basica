@@ -8,3 +8,7 @@ print("Entero = ", entero)
 print("Cadena = ", cadena)
 print("flotante =", flotante)
 print("Booleano =", booleano)
+
+El c tiene mas lineas que el Python
+hay return
+en c hay declaracion e impresion de valores 
