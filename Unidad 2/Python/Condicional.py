@@ -5,8 +5,8 @@ if edad >= 18:
 else:
     print("Eres menor de edad.")
 
-    el c indica numeros negativos o positivos 
-    el py habla sobre edad
-    el c escnea el numero 
-    tambien identifica si el numero es 0
-    al final del programa en c hay return y un corchete
+    #el c indica numeros negativos o positivos 
+    #el py habla sobre edad
+    #el c escnea el numero 
+    #tambien identifica si el numero es 0
+    #al final del programa en c hay return y un corchete
