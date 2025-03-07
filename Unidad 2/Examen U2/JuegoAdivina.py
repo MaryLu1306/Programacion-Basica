@@ -1,6 +1,6 @@
 ''' 
 Programa #1: Adivina el número.
-}El programa debe generar un número aleatorio entre 1 y 10 y el usuario debe adivinarlo. Si el usuario adivina el número, el programa debe mostrar un mensaje de felicitaciones y el número de intentos que le tomó al usuario adivinar el número. 
+El programa debe generar un número aleatorio entre 1 y 10 y el usuario debe adivinarlo. Si el usuario adivina el número, el programa debe mostrar un mensaje de felicitaciones y el número de intentos que le tomó al usuario adivinar el número. 
 Si el usuario no adivina el número, el programa debe mostrar un mensaje indicando si el número secreto es mayor o menor al número ingresado por el usuario.
 '''
 import random
@@ -27,10 +27,10 @@ while not adivinado:
 
 """ Conteste las siguientes preguntas después de hacer funcionar el código anterior:
 
-1. ¿Qué hace la función randint() del módulo random?
-2. ¿Qué tipo es la variable intentos?
-3. ¿Qué estamos haciendo en la línea 1?
-4. ¿Mencione los operadores que se utilizan en el código?
-5. ¿Qué hace la palabra intentos que está entre corchetes?
+1. ¿Qué hace la función randint() del módulo random? Indica el intervalo en el que se encuentra el numero secreto 
+2. ¿Qué tipo es la variable intentos? Enteros
+3. ¿Qué estamos haciendo en la línea 1? Se esta declarando un comentario
+4. ¿Mencione los operadores que se utilizan en el código? De asignacion, aritmeticos, relacionales
+5. ¿Qué hace la palabra intentos que está entre corchetes? Busca indicar el numero de intentos que se utilizaron para adivinar el numero secreto 
 
 """
