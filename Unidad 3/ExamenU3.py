@@ -1,15 +1,18 @@
-import time  
+from Archivos import guardar_diccionarios_en_csv, leer_diccionarios_de_csv
+import time
 
-# Lista vacía de alumnos 
-alumnos = []
+archivo = "alumnos.csv"
+
+# Lista vacia de alumnos
+alumnos = leer_diccionarios_de_csv(archivo)
 
 print("¡Te damos la bienvenida al Instituto Tecnológico de Pabellón de Arteaga!")
-print ("Contamos con formacion en:")
-print ("Ingenieria Mecatrónica")
-print ("Ingenieria Industrial")
-print ("Ingenieria en Gestión Empresarial")
-print ("Ingenieria en Logistica")
-print ("Maestría en Ingenieria Mecatrónica")
+print("Contamos con formacion en:")
+print("Ingenieria Mecatrónica")
+print("Ingenieria Industrial")
+print("Ingenieria en Gestión Empresarial")
+print("Ingenieria en Logistica")
+print("Maestría en Ingenieria Mecatrónica")
 print("Para empezar tienes que registrarte.")
 
 while True:
@@ -21,15 +24,12 @@ while True:
 
     opcion = input("Elige una opción: ")
 
-    # Registrar alumno
     if opcion == "1":
         nombre = input("Ingrese su nombre: ")
-        carrera = input ("Ingrese la carrera de su preferencia:")
+        carrera = input("Ingrese la carrera de su preferencia: ")
         edad = input("Ingrese su edad: ")
         calificacion = input("Ingrese su calificación: ")
 
-
-        # Agregar alumno a la lista
         alumnos.append({"nombre": nombre, "carrera": carrera, "edad": edad, "calificación": calificacion})
         print(f"✅ Alumno {nombre} registrado correctamente.")
 
@@ -46,7 +46,7 @@ while True:
                     print("❌ Número no registrado.")
             except ValueError:
                 print("❌ Ingresa un número válido.")
-
+        
     elif opcion == "3":
         if not alumnos:
             print("📭 No hay alumnos registrados.")
@@ -57,8 +57,14 @@ while True:
 
     elif opcion == "4":
         print("La actualización de listas se ha realizado correctamente. ¡Hasta luego!")
-        time.sleep(1)  # Pausa de 1 segundo antes de salir
+        time.sleep(1)  
         break
 
     else:
         print("❌ Opción inválida. Intenta de nuevo.")
+
+guardar_diccionarios_en_csv(archivo, alumnos)
+
+datos_leidos = leer_diccionarios_de_csv(archivo)
+print("Datos leídos del archivo CSV:")
+print(datos_leidos)
