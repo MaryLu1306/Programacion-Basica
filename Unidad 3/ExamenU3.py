@@ -3,7 +3,7 @@ import time
 
 archivo = "alumnos.csv"
 
-# Lista vacia de alumnos
+# Lista vacia de alumnos[]
 alumnos = leer_diccionarios_de_csv(archivo)
 
 print("¡Te damos la bienvenida al Instituto Tecnológico de Pabellón de Arteaga!")
