@@ -1,38 +1,41 @@
 # Herencia
 # Clase base o padre
-class Persona:
-    def __init__(self, nombre, edad):
-        self.nombre = nombre
-        self.edad = edad
+class Libro:
+    def __init__(self, titulo, paginas, editorial, autor, genero):
+        self.titulo = titulo
+        self.paginas = paginas
+        self.editorial = editorial
+        self.autor = autor
+        self.genero = genero
 
-    def presentarse(self):
-        return f"Hola, me llamo {self.nombre} y tengo {self.edad} años."
+    def presentar(self):
+        return f"Este libro se llama {self.titulo}, tiene {self.paginas} páginas, es de la editorial {self.editorial} y lo escribio {self.autor}, ¡Es un  libro de {self.genero}!."
 
 # Clase derivada o hija
-class Estudiante(Persona):
-    def __init__(self, nombre, edad, grado):
-        super().__init__(nombre, edad)  # Llamada al constructor de la clase padre
-        self.grado = grado
+class Titulo(Libro):
+    def __init__(self, titulo, paginas, editorial, autor, genero, tema):
+        super().__init__(titulo, paginas, editorial, autor, genero)  # Llamada al constructor de la clase padre
+        self.tema = tema
 
-    def presentarse(self):
+    def presentar(self):
         # Sobrescribimos el método de la clase padre
-        return f"Hola, me llamo {self.nombre}, tengo {self.edad} años y estudio en {self.grado}."
+        return f"Este libro se llama {self.titulo}, tiene {self.paginas} páginas, es de la editorial {self.editorial} y lo escribio {self.autor}, ¡Es un  libro de {self.genero}!, Busca principalmente {self.tema}."
 
 # Otra clase derivada
-class Profesor(Persona):
-    def __init__(self, nombre, edad, materia):
-        super().__init__(nombre, edad)
-        self.materia = materia
+class Titulo2(Libro):
+    def __init__(self, titulo, paginas, editorial, autor, genero, tema):
+        super().__init__(titulo, paginas, editorial, autor, genero) 
+        self.tema = tema
 
-    def presentarse(self):
-        return f"Hola, soy el profesor {self.nombre}, tengo {self.edad} años y enseño {self.materia}."
+    def presentar(self):
+        return f"Este libro se llama {self.titulo}, tiene {self.paginas} páginas, es de la editorial {self.editorial} y lo escribio {self.autor}, ¡Es un  libro de {self.genero}!, Busca principalmente {self.tema}."
 
 # Programa principal
 if __name__ == "__main__":
-    persona = Persona("Carlos", 40)
-    estudiante = Estudiante("Ana", 20, "3er año de Ingeniería")
-    profesor = Profesor("Luis", 50, "Matemáticas")
+    libro = Libro("Cien años de soledad", 450, "Sudamericana" , "Gabriel Garcia Marquez", "realismo magico" )
+    titulo = Titulo("La vuelta al mundo en 80 dias", 300, "Garnier Hermanos", "Julio Verne","aventura", "entretener")
+    titulo2 = Titulo2("El mundo de sofia", 600, "Forlaget H Aschehoug & Co", "Jostein Gaarder", "ficcion filosofica", "enseñar")
 
-    print(persona.presentarse())
-    print(estudiante.presentarse())
-    print(profesor.presentarse())
+    print(libro.presentar())
+    print(titulo.presentar())
+    print(titulo2.presentar())
