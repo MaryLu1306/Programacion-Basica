@@ -1,5 +1,4 @@
 import csv
-
 from Archivos import guardar_diccionarios_en_csv
 # Nombre del archivo a leer y de la función a importar
 
@@ -14,14 +13,19 @@ def leer_diccionarios_de_csv(nombre_archivo):
         return []
 
 
-def guardar_diccionarios_en_csv(nombre_archivo, diccionarios):
+def guardar_diccionarios_en_csv(nombre_archivo, lista_diccionarios):
     """Guarda una lista de diccionarios en un archivo CSV."""
-    if diccionarios:
-        with open(nombre_archivo, mode='w', newline='', encoding='utf-8') as archivo_csv:
-            campo_nombres = diccionarios[0].keys()
-            escritor = csv.DictWriter(archivo_csv, fieldnames=campo_nombres)
-            escritor.writeheader()
-            escritor.writerows(diccionarios)
+    if not lista_diccionarios:
+        print("La lista de diccionarios está vacía.")
+        return
+
+    encabezados = lista_diccionarios[0].keys()
+
+    with open(nombre_archivo, mode='w', newline='', encoding='utf-8') as archivo_csv:
+        campo_nombres = diccionarios[0].keys()
+        escritor = csv.DictWriter(archivo_csv, fieldnames=campo_nombres)
+        escritor.writeheader()
+        escritor.writerows(diccionarios)
 
 datos = [
     {"Nombre": "Juan", "Edad": 25, "Ciudad": "Madrid"},
@@ -32,7 +36,7 @@ datos = [
 archivo = "datos.csv"
 
 guardar_diccionarios_en_csv(archivo, datos)
-
+print(f"Datos guardados en {nombre_archivo} exitosamente.")
 
 datos_leidos = leer_diccionarios_de_csv(archivo)
 print("Datos leídos del archivo CSV:")

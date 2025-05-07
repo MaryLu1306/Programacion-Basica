@@ -5,7 +5,7 @@ Nombres = ["Aaron" , "Saba" , "Alexa" , "Manuel" , "Victor", "Cristian" , "Artur
 Edades = [19, 18, 18, 18, 18, 18, 18, 18, 18, 18]
 
 #Lista de materias
-Materias = ["Algebra lineal" , "Estadistica y control de calidad" , "Calculo integral" , "Programación básica", "Ingenieria de los materiales" , "Dibujo asistido por computadora" , "Administracion y contabilidad" , "Ingles", "calculo diferencial"]
+Materias = ["Algebra lineal" , "Estadistica y control de calidad" , "Calculo integral" , "Programación básica", "Ingenieria de los materiales" , "Administracion y contabilidad" , "Ingles"]
 
 #Lista de profesores 
 Profesores = ["Eduardo" , "Enrique" , "Marlem" , "Guillermo" , "Adylen" , "Laura" , ""]
@@ -25,5 +25,10 @@ Materias.remove("Programación básica")
 print (Materias)
 Materias.append("Programación avanzada")
 print (Materias)
-Materias.append([1], "Programación basica")
+print(len(Materias))
+Materias.remove ("Estadistica y control de calidad")
+Materias.insert (1, "Programacion basica")
 print(Materias)
+for Materia in Materias:
+    print(Materia)
+print(len(Materias))

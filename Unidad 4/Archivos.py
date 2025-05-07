@@ -28,14 +28,11 @@ def leer_diccionarios_de_csv(nombre_archivo):
 
 # Ejemplo de uso
 if __name__ == "__main__":
-
-datos = [
-    {"Nombre": "Juan", "Edad": 25, "Ciudad": "Madrid"},
-    {"Nombre": "Ana", "Edad": 30, "Ciudad": "Barcelona"},
-    {"Nombre": "Luis", "Edad": 35, "Ciudad": "Valencia"}
-]
-
-archivo = "datos.csv"
+    datos = [
+        {"Nombre": "Juan", "Edad": 25, "Ciudad": "Madrid"},
+        {"Nombre": "Ana", "Edad": 30, "Ciudad": "Barcelona"},
+        {"Nombre": "Luis", "Edad": 35, "Ciudad": "Valencia"}
+    ]
 
     archivo = "datos.csv"
 

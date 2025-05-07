@@ -1,0 +1,10 @@
+
+En la visita al C5i el pasado viernes, nos dieron a conocer el protocolo que se lleva a cabo al atender una llamada de emergencia dirigida al 911, desde mantener la calma al momento de hablar además de proporcionar todos los datos necesarios para mandar alguna unidad a que atienda el problema; nos señalaron la diferencia entre urgencia y emergencia, conceptos que podríamos pensar que significa lo mismo aunque no es así; la emergencia es algo que sucede en el momento y la urgencia algo que puede suceder si no se toman medidas para prevenirlo.
+
+Observamos en una pantalla como es que se clasifican los accidentes por colores indicando la gravedad de cada uno de ellos, así como también tuvimos la oportunidad de escuchar a los operadores que atienden las llamadas del 911 mientras hacían su trabajo; para cada reporte además de los datos que proporciona el que llama también se utiliza la geolocalización, misma que sirve de mucha ayuda si la persona se encuentra exaltada.
+
+En la sala de cámaras pudimos ver como las calles son monitoreadas y utilizadas en caso de algún reporte realizado, las grabaciones se guardan hasta un mes y dado caso de que se necesitaran seguir analizando se guardarían mas tiempo.
+
+En el C5i se comunican mediante radio, puesto que es un modo de comunicación rápido y no muy costoso; en el trabajan mas que nada especialistas en sistemas y programación, pero también se nos dijo que nosotros como mecatrónicos podríamos colaborar con un proyecto que sugiriera una parte de optimización para atender  las llamadas de emergencia o algo que se pudiera relacionar directamente con las cámaras.
+
+Finalmente nos pidieron que preguntáramos cosas sobre las que queríamos saber sobre ellos y yo pregunte sobre que pasaría en caso de un apagón, quería saber si tenían un generador de electricidad; pero me dijeron que tenían otra área mas pequeña para seguir atendiendo, así que supongo que no tienen ningún generador para mantener con energía la planta en caso de algún percance.
