@@ -10,7 +10,7 @@ class CalculatorApp(QWidget):
         self.initUI()
 
     def initUI(self):
-        # Widgets
+    
         self.label1 = QLabel("Número 1:", self)
         self.text_input1 = QLineEdit(self)
 
@@ -19,26 +19,22 @@ class CalculatorApp(QWidget):
 
         self.result_label = QLabel("Resultado:", self)
 
-        # Botones de operaciones
         self.suma_button = QPushButton("+", self)
         self.resta_button = QPushButton("-", self)
         self.multi_button = QPushButton("x", self)
         self.div_button = QPushButton("/", self)
 
-        # Conectar botones a funciones
         self.suma_button.clicked.connect(self.sumar)
         self.resta_button.clicked.connect(self.restar)
         self.multi_button.clicked.connect(self.multiplicar)
         self.div_button.clicked.connect(self.dividir)
-
-        # Layout vertical
+                            
         layout = QVBoxLayout()
         layout.addWidget(self.label1)
         layout.addWidget(self.text_input1)
         layout.addWidget(self.label2)
         layout.addWidget(self.text_input2)
 
-        # Layout horizontal para botones
         button_layout = QHBoxLayout()
         button_layout.addWidget(self.suma_button)
         button_layout.addWidget(self.resta_button)
