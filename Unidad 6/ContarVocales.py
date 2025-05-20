@@ -3,7 +3,6 @@ texto = input("Introduce un texto para analizar: ")
 contador_vocales = 0
 contador_consonantes = 0
 contador_numeros = 0
-contador_otros = 0
 
 vocales = ['a','A','á','E','e','é','i','I','í','O','o','ó','U','u']
 
